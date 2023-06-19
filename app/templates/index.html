@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inventario</title>
+    <link rel="stylesheet" href="/static/css/home.css">
+</head>
+<body id="inicial">
+    <h1>Inventario de Maquinas</h1>
+
+    <div id="button">
+        <a href="/form">
+            <button type="button" class="btn-success">Adicionar</button>
+        </a>
+    </div>
+
+    <div class="search">
+        <form method="get">
+            <input type="text" id="search" name="search" placeholder="Buscar...">
+        </form>
+    </div>
+
+    <div class="table">
+        <table  id="customers" align="center">
+            <thead>
+                <tr>
+                    <th scope="col">Usuario</th>
+                    <th scope="col">Patrimonio</th>
+                    <th scope="col">Sistema Operacional</th>
+                    <th scope="col">Ações</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for dbs in db %}
+                    <tr>
+                        <td>{{dbs.usuario}}</td>
+                        <td>{{dbs.patrimonio}}</td>
+                        <td>{{dbs.sistema}}</td>
+                        <td>
+                            <a href="/edit/{{dbs.id}}/"><button class="btn-success">Editar</button></a>
+                            <a href="/delete/{{dbs.id}}/"><button class="btnDel">Deletar</button></a>
+                        </td>
+                    </tr>  
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+
+    {%load static%}
+    <script src="{%static 'javascript/java.js'%}"></script>
+</body>
+</html>

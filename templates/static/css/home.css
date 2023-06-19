@@ -1,0 +1,85 @@
+h1{
+    color: #aa0404;
+    text-align: center;
+}
+
+.btn-success{
+    background-color: green;
+    color: white;
+    padding: 5px 8px;
+    border: 1px solid green;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+.btn-success:hover{
+    background-color: white;
+    color: green;
+}
+
+.btnDel{
+    background-color: red;
+    color: white;
+    padding: 5px 8px;
+    border: 1px solid red;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+.btnDel:hover{
+    background-color: white;
+    color: red;
+}
+
+#button{
+    text-align: center;
+}
+
+#customers {
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 80%;
+  }
+  
+  #customers td, #customers th {
+    border: 1px solid #ddd;
+    padding: 8px;
+    padding-top: 4px;
+    padding-bottom: 5px;
+  }
+  
+  #customers tr:nth-child(even){background-color: #f2f2f2;}
+  
+  #customers tr:hover {background-color: #ddd;}
+  
+  #customers th {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    text-align: left;
+    background-color: #aa0404;
+    color: white;
+  }
+
+div.table{
+    margin: auto;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    margin-top: 2%;
+    text-align: left;
+    
+}
+
+body#inicial{
+    background-color: #f3f2ef;
+}
+
+.search{
+    text-align: center;
+    margin-top: 2%;
+}
